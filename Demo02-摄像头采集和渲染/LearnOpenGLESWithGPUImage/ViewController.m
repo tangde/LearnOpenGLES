@@ -43,7 +43,7 @@
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     for (AVCaptureDevice *device in devices)
     {
-        if ([device position] == AVCaptureDevicePositionFront)
+        if ([device position] == AVCaptureDevicePositionBack)
         {
             inputCamera = device;
         }
@@ -83,10 +83,12 @@
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     static long frameID = 0;
     ++frameID;
-    CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-    [self.mGLView displayPixelBuffer:pixelBuffer];
+    CFRetain(sampleBuffer);
     dispatch_async(dispatch_get_main_queue(), ^{
+        CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+        [self.mGLView displayPixelBuffer:pixelBuffer];
         self.mLabel.text = [NSString stringWithFormat:@"%ld", frameID];
+        CFRelease(sampleBuffer);
     });
 }
 

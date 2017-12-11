@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.m
 //  LearnOpenGLES
 //
@@ -29,7 +29,6 @@
 
 @implementation ViewController
 {
-    CADisplayLink *displayLink;
 }
 
 - (void)viewDidLoad {
