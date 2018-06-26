@@ -12,13 +12,13 @@
 #import <AssetsLibrary/ALAssetsLibrary.h>
 
 @interface ViewController () <AVCaptureVideoDataOutputSampleBufferDelegate>
-@property (nonatomic , strong) UILabel  *mLabel;
-@property (nonatomic , strong) AVCaptureSession *mCaptureSession; //负责输入和输出设备之间的数据传递
-@property (nonatomic , strong) AVCaptureDeviceInput *mCaptureDeviceInput;//负责从AVCaptureDevice获得输入数据
-@property (nonatomic , strong) AVCaptureVideoDataOutput *mCaptureDeviceOutput; //
+@property (nonatomic, strong) UILabel  *mLabel;
+@property (nonatomic, strong) AVCaptureSession *mCaptureSession; //负责输入和输出设备之间的数据传递
+@property (nonatomic, strong) AVCaptureDeviceInput *mCaptureDeviceInput;//负责从AVCaptureDevice获得输入数据
+@property (nonatomic, strong) AVCaptureVideoDataOutput *mCaptureDeviceOutput; //output
 
 // OpenGL ES
-@property (nonatomic , strong)  LYOpenGLView *mGLView;
+@property (nonatomic, strong)  LYOpenGLView *mGLView;
 
 @end
 
@@ -37,7 +37,7 @@
     self.mCaptureSession = [[AVCaptureSession alloc] init];
     self.mCaptureSession.sessionPreset = AVCaptureSessionPreset640x480;
     
-    mProcessQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    mProcessQueue = dispatch_queue_create("mProcessQueue", DISPATCH_QUEUE_SERIAL);
     
     AVCaptureDevice *inputCamera = nil;
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];

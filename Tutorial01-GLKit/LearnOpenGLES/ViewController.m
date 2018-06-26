@@ -2,7 +2,7 @@
 //  ViewController.m
 //  LearnOpenGLES
 //
-//  Created by 林伟池 on 16/3/11.
+//  Created by 林伟池 on 2018年06月04日；
 //  Copyright © 2016年 林伟池. All rights reserved.
 //
 
@@ -34,7 +34,7 @@
 }
 
 - (void)uploadVertexArray {
-    //顶点数据，前三个是顶点坐标，后面两个是纹理坐标
+    //顶点数据，前三个是顶点坐标（x、y、z轴），后面两个是纹理坐标（x，y）
     GLfloat vertexData[] =
     {
         0.5, -0.5, 0.0f,    1.0f, 0.0f, //右下
