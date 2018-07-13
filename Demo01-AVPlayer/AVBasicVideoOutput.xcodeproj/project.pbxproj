@@ -176,6 +176,11 @@
 				CLASSPREFIX = AVVA;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					EF1D1FD81627784E0030141F = {
+						DevelopmentTeam = A478ENRUX2;
+					};
+				};
 			};
 			buildConfigurationList = EF1D1FD31627784E0030141F /* Build configuration list for PBXProject "AVBasicVideoOutput" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -310,10 +315,11 @@
 		EF1D20091627784E0030141F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVBasicVideoOutput/AVBasicVideoOutput-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AVBasicVideoOutput/AVBasicVideoOutput-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AVBasicVideoOutput;
@@ -326,10 +332,11 @@
 		EF1D200A1627784E0030141F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVBasicVideoOutput/AVBasicVideoOutput-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AVBasicVideoOutput/AVBasicVideoOutput-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = AVBasicVideoOutput;

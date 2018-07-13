@@ -18,7 +18,7 @@ void main()
 							    sin(preferredRotation),  cos(preferredRotation), 0.0, 0.0,
 												   0.0,					    0.0, 1.0, 0.0,
 												   0.0,					    0.0, 0.0, 1.0);
-	gl_Position = position * rotationMatrix;
+	gl_Position = rotationMatrix * position;
 	texCoordVarying = texCoord;
 }
 
