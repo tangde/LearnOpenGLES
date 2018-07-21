@@ -163,6 +163,7 @@
 				TargetAttributes = {
 					FD205ABA1CD0903F000DD196 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = A478ENRUX2;
 					};
 					FD205AD31CD09040000DD196 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -343,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				INFOPLIST_FILE = SkyBoxImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.SkyBoxImage;
@@ -354,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				INFOPLIST_FILE = SkyBoxImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.SkyBoxImage;
@@ -404,6 +407,7 @@
 				FD205ADF1CD09040000DD196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD205AE01CD09040000DD196 /* Build configuration list for PBXNativeTarget "SkyBoxImageTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +416,7 @@
 				FD205AE21CD09040000DD196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
