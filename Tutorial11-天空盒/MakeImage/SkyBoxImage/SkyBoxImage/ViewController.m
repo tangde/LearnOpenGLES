@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.mImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100 * 6)];
-    UIImage* image = [UIImage imageNamed:@"skybox"];
+    UIImage* image = [UIImage imageNamed:@"cubemaps_skybox"];
     [self.mImageView setImage:image];
     NSLog(@"%@", [image description]);
     [self.view addSubview:self.mImageView];

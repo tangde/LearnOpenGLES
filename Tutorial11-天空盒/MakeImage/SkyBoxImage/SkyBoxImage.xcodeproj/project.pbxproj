@@ -15,6 +15,10 @@
 		FD205ACE1CD0903F000DD196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD205ACC1CD0903F000DD196 /* LaunchScreen.storyboard */; };
 		FD205AD91CD09040000DD196 /* SkyBoxImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD205AD81CD09040000DD196 /* SkyBoxImageTests.m */; };
 		FD205AEA1CD0A48B000DD196 /* skybox.png in Resources */ = {isa = PBXBuildFile; fileRef = FD205AE91CD0A48B000DD196 /* skybox.png */; };
+		FDF82EAE21129DEB003EDBD9 /* skybox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDF82EAD21129DEB003EDBD9 /* skybox.jpg */; };
+		FDF82EB321129E3B003EDBD9 /* cubemaps_skybox.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF82EB021129E3B003EDBD9 /* cubemaps_skybox.png */; };
+		FDF82EB421129E3B003EDBD9 /* ocean_skybox.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF82EB121129E3B003EDBD9 /* ocean_skybox.png */; };
+		FDF82EB521129E3B003EDBD9 /* “cubemaps_skybox”标注.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF82EB221129E3B003EDBD9 /* “cubemaps_skybox”标注.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		FD205AD81CD09040000DD196 /* SkyBoxImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyBoxImageTests.m; sourceTree = "<group>"; };
 		FD205ADA1CD09040000DD196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD205AE91CD0A48B000DD196 /* skybox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox.png; sourceTree = "<group>"; };
+		FDF82EAD21129DEB003EDBD9 /* skybox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox.jpg; sourceTree = "<group>"; };
+		FDF82EB021129E3B003EDBD9 /* cubemaps_skybox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cubemaps_skybox.png; sourceTree = "<group>"; };
+		FDF82EB121129E3B003EDBD9 /* ocean_skybox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean_skybox.png; sourceTree = "<group>"; };
+		FDF82EB221129E3B003EDBD9 /* “cubemaps_skybox”标注.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "“cubemaps_skybox”标注.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 		FD205ABD1CD0903F000DD196 /* SkyBoxImage */ = {
 			isa = PBXGroup;
 			children = (
+				FDF82EAF21129E3B003EDBD9 /* res */,
+				FDF82EAD21129DEB003EDBD9 /* skybox.jpg */,
 				FD205AE91CD0A48B000DD196 /* skybox.png */,
 				FD205AC11CD0903F000DD196 /* AppDelegate.h */,
 				FD205AC21CD0903F000DD196 /* AppDelegate.m */,
@@ -112,6 +122,17 @@
 				FD205ADA1CD09040000DD196 /* Info.plist */,
 			);
 			path = SkyBoxImageTests;
+			sourceTree = "<group>";
+		};
+		FDF82EAF21129E3B003EDBD9 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				FDF82EB021129E3B003EDBD9 /* cubemaps_skybox.png */,
+				FDF82EB121129E3B003EDBD9 /* ocean_skybox.png */,
+				FDF82EB221129E3B003EDBD9 /* “cubemaps_skybox”标注.png */,
+			);
+			name = res;
+			path = ../../../res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF82EAE21129DEB003EDBD9 /* skybox.jpg in Resources */,
+				FDF82EB521129E3B003EDBD9 /* “cubemaps_skybox”标注.png in Resources */,
 				FD205ACE1CD0903F000DD196 /* LaunchScreen.storyboard in Resources */,
 				FD205AEA1CD0A48B000DD196 /* skybox.png in Resources */,
+				FDF82EB321129E3B003EDBD9 /* cubemaps_skybox.png in Resources */,
+				FDF82EB421129E3B003EDBD9 /* ocean_skybox.png in Resources */,
 				FD205ACB1CD0903F000DD196 /* Assets.xcassets in Resources */,
 				FD205AC91CD0903F000DD196 /* Main.storyboard in Resources */,
 			);
