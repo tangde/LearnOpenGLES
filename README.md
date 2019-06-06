@@ -13,3 +13,6 @@ OpenGL 开头的是OpenGL（非 ES）
 
 
 如果你对OpenGL ES实现的demo有新想法和其他建议，欢迎加群263556662交流。
+
+-----------------------
+test git diff
